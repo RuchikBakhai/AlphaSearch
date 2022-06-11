@@ -10,6 +10,16 @@ $(document).ready(function(){
   $(".rules").css("display","none");
   $(".rules").fadeIn(1000);
 });
+var isOn = true;
+document.querySelector(".searchbar").value = "Enter Engine Code";
+$(".searchbar").css("opacity",0.5);
+$(".searchbar").click(function(){
+  if(isOn){
+    document.querySelector(".searchbar").value = "";
+    $(".searchbar").css("opacity",1);
+    isOn = false;
+  }
+});
 var es = false;
 var engine = "";
 $("body").on("keypress",function(event){
@@ -81,5 +91,8 @@ function setEngine(key){
 }
 
 function search(key){
+  document.querySelector(".searchbar").value = "Enter Engine Code";
+  $(".searchbar").css("opacity",0.5);
+  isOn = true;
   window.location.href = engine+key;
 }
