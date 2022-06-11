@@ -72,10 +72,10 @@ body{
   padding-right:2%;
 }
 
-@media (max-width: 400px){
+@media (max-width: 1200px){
   .heading{
     font-size: 3.5rem;
-    padding-top: 30%;
+    padding-top: 20%;
   }
   .engine{
     font-size: 2rem;
