@@ -37,37 +37,37 @@ $(".searchimg").click(function(event){
       }
 });
 function setEngine(key){
-  if(key=="g"){
+  if(key=="g" || key=="G"){
     $(".enginename").text("Google");
     var key = document.querySelector(".searchbar").value = "";
     $(".codehead").text("search in Google");
     engine = "https://www.google.com/search?q=";
   }
-  else if(key=="y"){
+  else if(key=="y" || key=="Y"){
     $(".enginename").text("Youtube");
     var key = document.querySelector(".searchbar").value = "";
     $(".codehead").text("search in Youtbe");
     engine = "https://www.youtube.com/results?search_query=";
   }
-  else if(key=="d"){
+  else if(key=="d" || key=="D"){
     $(".enginename").text("Google Docs");
     var key = document.querySelector(".searchbar").value = "";
     $(".codehead").text("search in Google Docs");
     engine = "https://docs.google.com/document/u/0/?tgif=d&q=";
   }
-  else if(key=="f"){
+  else if(key=="f" || key=="F"){
     $(".enginename").text("Facebook");
     var key = document.querySelector(".searchbar").value = "";
     $(".codehead").text("search in Facebook");
     engine = "https://www.facebook.com/search/top?q=";
   }
-  else if(key=="sl"){
+  else if(key=="sl" || key=="Sl"){
     $(".enginename").text("Slides");
     var key = document.querySelector(".searchbar").value = "";
     $(".codehead").text("search in Slides");
     engine = "https://docs.google.com/presentation/u/0/?tgif=d&q=";
   }
-  else if(key=="dr"){
+  else if(key=="dr" || key=="Dr"){
     $(".enginename").text("Drive");
     var key = document.querySelector(".searchbar").value = "";
     $(".codehead").text("search in Drive");
